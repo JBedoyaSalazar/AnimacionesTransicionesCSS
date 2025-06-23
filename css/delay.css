@@ -1,0 +1,48 @@
+@media (hover:hover) and (pointer: fine){
+    .container:hover .circle{
+        transform: translateX(200px);
+    }
+
+}
+
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.one{
+    background-color: lavender;
+    transition: transform 1s linear;
+}
+
+.two{
+    background-color: thistle;
+    transition: transform 1.3s ease;
+    transition-delay: 0.2s;
+}
+
+.three{
+    background-color: plum;
+    transition: transform 1.5s ease-in;
+    transition-delay: 0.5s;
+}
+
+.four{
+    background-color: violet;
+    transition: transform 1.7s ease-in-out;
+    transition-delay: 0.7s;
+}
+
+.five{
+    background-color: orchid;
+    transition: transform 2s ease-out;
+    transition-delay: 1s;
+}
+
+.six{
+    background-color: fuchsia;
+    transition: transform 2.5s linear;
+    transition-delay: 1.4s;
+}

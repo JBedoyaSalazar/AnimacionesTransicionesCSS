@@ -1,0 +1,14 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    border-radius: 50%;
+    transition: transform 1.5s linear;
+}
+
+@media (hover:hover) and (pointer: fine){
+    div:hover{
+        transform: translateX(200px);
+        transition: transform 1s linear;
+    }
+}
