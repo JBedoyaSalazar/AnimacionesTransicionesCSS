@@ -1,0 +1,16 @@
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media (hover:hover) and (pointer:fine){
+    .container:hover .item{
+        transform: translateY(-15px);
+        transition: transform 1s;
+    }
+}
+
+.item{
+    background-color: palegoldenrod;
+}

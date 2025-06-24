@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: end;
+}
+
+.nav li{
+    margin: 12px;
+}
+
+.nav li ul{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s;
+    transition-delay: 0.2;
+}
+
+.nav li ul li{
+    position: relative;
+    inset-inline-start: 20px;
+}
+
+@media (hover:hover) and (pointer: fine) {
+    .nav li:hover > ul{
+        opacity: 1;
+        transition: opacity 0.3s;
+        transition-delay: 0.2;
+    }
+}
